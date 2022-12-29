@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import MovieList from './components/MovieList';
 import './App.css';
@@ -31,6 +31,19 @@ export default function App() {
         'https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
     },
   ]);
+
+  const getMovieRequest = async () => {
+    const url = 'http://www.omdbapi.com/?s=star wars&apikey=2ca6ef38';
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    console.log('hello', responseJson);
+  };
+
+  useEffect(() => {
+    getMovieRequest();
+  }, []);
+
   return (
     <div className="container-fluid movie-app">
       <div className="row">
