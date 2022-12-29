@@ -32,8 +32,10 @@ export default function App() {
     },
   ]);
   return (
-    <div className="container-fluid">
-      <MovieList movies={movies} />
+    <div className="container-fluid movie-app">
+      <div className="row">
+        <MovieList movies={movies} />
+      </div>
     </div>
   );
 }
