@@ -3,6 +3,7 @@ import './style.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
+import AddFavourites from './components/AddFavourites';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,7 +32,7 @@ export default function App() {
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className="row">
-        <MovieList movies={movies} />
+        <MovieList movies={movies} favouriteComponent={AddFavourites} />
       </div>
     </div>
   );
