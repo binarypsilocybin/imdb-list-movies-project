@@ -43,6 +43,16 @@ export default function App() {
           favouriteComponent={AddFavourites}
         />
       </div>
+      <div className="row d-flex align-items-center mt-4 mb-4">
+        <MovieListHeading heading="Favourites" />
+      </div>
+      <div className="row">
+        <MovieList
+          movies={favourites}
+          handleFavouritesClick={AddFavouriteMovie}
+          favouriteComponent={AddFavourites}
+        />
+      </div>
     </div>
   );
 }
