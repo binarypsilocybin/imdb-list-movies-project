@@ -5,12 +5,12 @@ const AddFavourite = () => {
     <>
       <span className="mr-2">Add to Favourites</span>
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-heart-fill"
+        width="1em"
+        height="1em"
         viewBox="0 0 16 16"
+        class="bi bi-heart-fill"
+        fill="red"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           fill-rule="evenodd"

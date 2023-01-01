@@ -1,25 +1,26 @@
 body {
   background: #141414;
-  color: #ffff;
+  color: #ffffff;
 }
 
 .movie-app > .row {
-  overflow-x: auto;
+  overflow-x: hidden;
   flex-wrap: nowrap;
 }
 
 .image-container {
   position: relative;
   transition: transform 0.2s;
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
+  width: auto;
 }
 
 .image-container:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
 }
 
 .overlay {
