@@ -2,7 +2,6 @@ import React from 'react';
 
 const MovieList = (props) => {
   const FavouriteComponent = props.favouriteComponent;
-  console.log(props.Poster);
 
   return (
     <>
